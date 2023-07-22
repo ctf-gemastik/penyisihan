@@ -26,7 +26,7 @@ Tags dari soal pisahkan koma (e.g: tags1, tags2, tags3)
 
 ## Deployment
 Penjelasan cara menjalankan service yang dibutuhkan serta requirementsnya.
-
+<!--
 #### Contoh 1
 - Install docker engine>=19.03.12 and docker-compose>=1.26.2.
 - Run the container using:
@@ -45,6 +45,6 @@ Penjelasan cara menjalankan service yang dibutuhkan serta requirementsnya.
     ```
 - Workdir di `/home`
 - Gunakan libc 2.31 ketika sudah keluar. Alias Ubuntu 20.04.
-
+-->
 ## Notes
 Tambahan informasi untuk soal, deployment, atau serangan yang mungkin terjadi pada service soal
