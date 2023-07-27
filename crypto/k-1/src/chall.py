@@ -1,10 +1,9 @@
 import random
 import os
-from Crypto.Util.number import bytes_to_long
 
 bits = 32
 k = 3
-password = bytes_to_long(os.urandom(bits // 8)) % 20000
+password = random.getrandbits(bits) % 20000
 
 def get_shares():
     coeffs = [password] + [random.getrandbits(bits) for _ in range(k - 1)]
