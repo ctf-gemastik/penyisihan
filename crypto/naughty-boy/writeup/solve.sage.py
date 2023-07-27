@@ -39,9 +39,13 @@ for sol in sols:
         print(f'Failed! Continue to next possible solution')
         continue
     found = False
+    
+    # If we use the above lattice, the recovered z3 value won't be accurate.
+    # However, the error is small, so that it is bruteforce-able.
     for err in range(_sage_const_10000 ):
         curr_z3 = recovered_z3-err
         print(f'{curr_z3 = }, predicted {err = }')  
+
         # Perform lattice reduction again with the hint_1. We hope that after reduction,
         # one of the vector will be (-rand_2, z2*s, z1*s).
         s = _sage_const_2  ** (_sage_const_1024  - _sage_const_512 )
