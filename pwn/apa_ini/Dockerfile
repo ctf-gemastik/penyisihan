@@ -8,12 +8,12 @@ RUN useradd -U -m -s /bin/bash apaini
 
 WORKDIR /home/apaini
 
-COPY ./flag.txt .
-COPY ./chall .
-COPY ./run.sh ./run
-COPY ./xinetd /etc/xinetd.d/xinetd
-COPY ./startchall.sh /usr/bin/startchall
-COPY ./username-* .
+COPY ./src/flag.txt .
+COPY ./src/chall .
+COPY ./src/run.sh ./run
+COPY ./src/xinetd /etc/xinetd.d/xinetd
+COPY ./src/startchall.sh /usr/bin/startchall
+COPY ./src/username-* .
 
 RUN chown -R root:apaini /home/apaini
 RUN chmod -R 750 /home/apaini && chmod 440 flag.txt 
