@@ -36,13 +36,13 @@ for sol in sols:
             ] 
         ) 
         L = m.LLL()
-        for vector in L:
-            if (vector[1] // s).nbits() == 512 and is_prime(vector[1] // s):
-                z2 = vector[1] // s
+        for vct in L:
+            if (vct[1] // s).nbits() == 512 and is_prime(vct[1] // s):
+                z2 = vct[1] // s
                 z1 = n // z2
                 break
-            elif (vector[2] // s).nbits() == 512 and is_prime(vector[2] // s):
-                z1 = vector[2] // s
+            elif (vct[2] // s).nbits() == 512 and is_prime(vct[2] // s):
+                z1 = vct[2] // s
                 z2 = n // z1
                 break
         try:
