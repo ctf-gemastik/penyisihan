@@ -96,7 +96,6 @@ for sol in sols:
             r.recvuntil(b'prize:\n')
             flag = r.recvline().strip()
             print(f'Flag: {flagz}')
-            print(f'Flag: {flag}')
             found=True
         except:
             continue
