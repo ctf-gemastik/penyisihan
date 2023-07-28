@@ -11,7 +11,7 @@ gemastik{11fcdf5c2c217495e2c16fb2f20c136fe776c763}
 ```
 
 ## Description
-Our network was bombarded by a port scanner, but fortunately, nothing major happened. Interestingly, our server appears to provide different responses depending on the specific request it receives
+Our network was repeatedly bombarded by a port scanner targeting a specific `port``. Interestingly, our server seems to provide different responses depending on the specific request it receives. Although nothing major happened, we believe there was a hidden intention behind the attacks.
 
 ## Difficulty
 easy
