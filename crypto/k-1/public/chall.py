@@ -1,9 +1,9 @@
 import random
 import os
 
-bits = 32
-k = 3
-password = random.getrandbits(bits) % 20000
+bits = 1024
+k = random.randint(20, 35)
+password = random.getrandbits(bits) % 1000000
 
 def get_shares():
     coeffs = [password] + [random.getrandbits(bits) for _ in range(k - 1)]
@@ -16,6 +16,7 @@ def get_shares():
         y = sum(map(lambda i : coeffs[i] * pow(x, i), range(len(coeffs))))
         shares.append((x, y))
     
+    print(f'{k = }')
     for share in shares:
         print(share)
 
