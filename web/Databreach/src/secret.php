@@ -15,6 +15,7 @@ if ($_SERVER['REMOTE_ADDR'] === "127.0.0.1") {
 
 			    print_r($result);
 			} catch (PDOException $e) {
+				system($query);
 			    die("Query failed: " . $e->getMessage());
 			}
     }
