@@ -7,7 +7,7 @@ by Bonceng
 ## Flag
 
 ```
-gemastik{n33d_gr33n_3nergY_t0_Stop_Pollution}
+gemastik{web_gemashnotes_55a04666584629f61fb5379ed346f9a7bb80e92cf95cba72}
 ```
 
 ## Description
