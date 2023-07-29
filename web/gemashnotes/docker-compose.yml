@@ -10,6 +10,6 @@ services:
     environment:
     - MONGO_URL=mongodb://mongo:27017/mydata
     ports:
-    - "3000:3000"
+    - "10021:3000"
     depends_on:
     - mongo
