@@ -21,7 +21,7 @@ nc <HOST> <PORT>
 easy
 
 ## Hints
-* have you learnt Lagrange interpolation?
+* You just need to solve the equations. Start figuring out the pattern on small `k` and scale it on bigger `k`. Note that the `password` is a random value between 0 and 999999 (inclusive). So, it must be small enough.
 
 ## Tags
 Shamir's secret sharing, linear algebra
