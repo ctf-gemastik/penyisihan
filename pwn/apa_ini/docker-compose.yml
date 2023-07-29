@@ -7,4 +7,4 @@ services:
     environment:
       - TERM=xterm
     ports:
-      - "11101:11101"
+      - "10010:11101"
