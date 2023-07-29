@@ -13,8 +13,15 @@ int get_random(){
 	return rand() % 417;
 }
 
+void helper()
+{
+		__asm__("popq %rdi\n\t"
+			"ret\n\t");
+}
+
 int setup()
 {
+
 
 	setvbuf(stdout, NULL, _IONBF, 0);
 	setvbuf(stdin, NULL, _IONBF, 0);
