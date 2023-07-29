@@ -25,3 +25,7 @@
 
 1. Ubah link webhook, command RCE, web target yang diinginkan pada `solver.py`
 2. Jalankan `solver.py`, kemudian nanti akan muncul sebuah request pada webhook dengan query berupa base64 hasil dari command RCE yang dieksekusi.
+
+## Reference
+- https://huntr.dev/bounties/1eef5a72-f6ab-4f61-b31d-fc66f5b4b467/
+- https://mizu.re/post/ejs-server-side-prototype-pollution-gadgets-to-rce
