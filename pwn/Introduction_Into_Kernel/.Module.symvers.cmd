@@ -1,0 +1,1 @@
+savedcmd_/home/linz/Desktop/CTF/Gemastik/PWN/Introduction/Module.symvers :=  scripts/mod/modpost       -o /home/linz/Desktop/CTF/Gemastik/PWN/Introduction/Module.symvers -T /home/linz/Desktop/CTF/Gemastik/PWN/Introduction/modules.order -i Module.symvers -e 

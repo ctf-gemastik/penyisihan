@@ -1,0 +1,11 @@
+version: '3'
+services:
+  gemastik:
+    container_name: introduction_into_kernel
+    restart: always
+    build:
+      context: .
+    working_dir: /home/ctf
+    ports:
+      - "10011:1337" # exposed:local
+    read_only: true
