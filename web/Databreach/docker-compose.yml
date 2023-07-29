@@ -1,0 +1,28 @@
+version: '2'
+services:
+  gemastik-databreach:
+    image: mysql:8.0
+    container_name: gemastik-databreach
+    command: --default-authentication-plugin=mysql_native_password
+#        working_dir: /application
+    volumes:
+      - .:/application
+      - ./db/db.sql:/docker-entrypoint-initdb.d/db.sql
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=Password!!!!123
+      - MYSQL_DATABASE=databreach
+      - MYSQL_USER=db_databreach
+      - MYSQL_PASSWORD=Password!!!!
+    ports:
+      - "3307:3307"
+  gemastik-databreach-web:
+    container_name: gemastik-databreach-web
+    build:
+      context: ./
+    volumes:
+      - ./src/*:/var/www/html/*
+    ports:
+      - "10022:80"
+    depends_on:
+      - gemastik-databreach
