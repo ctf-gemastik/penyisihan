@@ -1,1 +1,0 @@
-FLAG = b'gemastik{y0u_uNd3rst4nD_f3rm4t_4nd_LLL}'

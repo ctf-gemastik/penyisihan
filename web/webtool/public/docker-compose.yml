@@ -12,6 +12,6 @@ services:
     restart: always
     mem_limit: 512MB
     ports:
-    - 8080:8090
+    - 10020:8090
     depends_on:
     - "db"
